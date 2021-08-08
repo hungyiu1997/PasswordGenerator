@@ -1,11 +1,8 @@
 
 var specialChar = ["@", "$", "#", "&", "*", "!"]
-//Array of numerical characters
- var numberChoi = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-//Array of lowercase characters (look up .split())
+var numberChoi = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 var lowerCase = "a b c d f g h i j k l m n o p q r m n o p q r s t u v w x y z";
 var lowerCaseEl = lowerCase .split(" ");
-//Array of Uppercase characters (look up .split())
 var upperCase = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
 var upperCaseEl = upperCase .split (" ");
 
@@ -27,7 +24,6 @@ function getUserOperations() {
     return;
   }
 
-  // to store user information from options above. Purple is key, yellow is the value.
   var userChoices = {
     useLowerCase: useLowerCase,
     useUpperCase: useUpperCase,
@@ -39,21 +35,9 @@ function getUserOperations() {
   return userChoices;
 }
 
-
-
-// getUserOperations();
-
-// function for getting a random element from an array
-//check out math.random
-function getRandom {
-  return Math.floor(Math.random)*10);
-}
-
-//function to generate a password with our user input.
-// .getRandom
 function generatePassword () {
  var input = getUserOperations();
- var results = userInput();
+ var results = userChoices();
  var userPosChars = [];
  var guarChar = [];
 
@@ -75,15 +59,8 @@ function generatePassword () {
  }
  }
 
-chosenChar.push(numbers)
-//create a variable and call our function so we can use data from the 
-
-
-// Assignment Code
  var generateBtn = document.querySelector("#generate");
 
-
-// // Write password to the #password input
  function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
@@ -91,11 +68,9 @@ chosenChar.push(numbers)
      passwordText.value = password;
 }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-//  generateBtn.addEventListener("click", getUserOperations);
 
 
-for (var i=0; i< guarChars.length; i++) {
-
+for (var i=0; i< length; i++) {
+  userChoices.push (password[Math.floor(Math.random() * guarChars.length)]);
 }
